@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 1. adasdas - 1 
 2. adasdasd - 3
 3. asdasdasd - 5
+=======
+1. adasdas - 5 
+2. dasd - 3
+3. asdasdasd - 1
+>>>>>>> second_branch
 4. adasdasd - 7
 5. adasdasd - 0
