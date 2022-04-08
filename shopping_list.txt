@@ -1,5 +1,5 @@
-1. adasdas 
-2. adasdasd
-3. asdasdasd
-4. adasdasd
-5. adasdasd
+1. adasdas - 5 
+2. adasdasd - 3
+3. asdasdasd - 1
+4. adasdasd - 7
+5. adasdasd - 0
