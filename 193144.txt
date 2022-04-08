@@ -1,0 +1,94 @@
+1. Инсталирање на git и креирање на профил на github
+2. Менување на името на гранката во master
+3. Креирање на public репозиториум со име "SI_2022_lab1_193144". освен ова има и додадено
+README фајл.
+4. Го клонирав самиот репозиториум со командата git clone и влегов во фолдерот каде што
+е клониран самиот репозиториум во мојот компјутер
+5. Прво додадов некои случајни производи со командата nano shopping_list.txt, го додадов тој фајл
+со командата git add shopping_list.txt, па потоа направив commit со командата git commit
+6. Се вратив во дадотеката со командата nano shopping_list.txt, додадов квантитет на производите.
+Овде ја користев командата git commit -a -m "Added quantities to the items!"
+7. Со командата git branch додадов две нови гранки (git branch first_branch, git branch second_branch)
+8. Anevski@Stefan MINGW64 ~/Desktop/SI_2022_lab1_193144 (main)
+$ git log
+commit 7b26b49aba6d35154f1d0fcb5d2d884a1729b63a (HEAD -> main, second_branch, first_branch)
+Author: stefan-anevski <anevskistefan5@gmail.com>
+Date:   Fri Apr 8 16:22:53 2022 +0200
+
+    Added quantities to the items!
+
+commit c565192b7d23e6728cb3d36ec7c749dc69f773b4
+Author: stefan-anevski <anevskistefan5@gmail.com>
+Date:   Fri Apr 8 16:21:31 2022 +0200
+
+    Added 5 items to the shopping list!
+
+commit cddafcdd35e461927d0a1c3d76c7f23c3250dd6c (origin/main, origin/HEAD)
+Author: stefan-anevski <100270379+stefan-anevski@users.noreply.github.com>
+Date:   Fri Apr 8 16:14:58 2022 +0200
+
+    Initial commit
+9. Синхронизација со git push origin master, git push origin first_branch, git push origin second_branch
+10. Ја префрлив активната гранка со командата git checkout first_branch
+11. Со nano shopping_list.txt се вратив во дадотеката,ја променив количината на 1та ставка,направив add и commit.
+12. Со git checkout master се вратив на мастер гранката.
+13. Со nano shopping_list.txt се вратив во датотеката,ја променив количината на 3тата ставка,направив add i commit.
+14. Со git push origin master,git push origin first_branch, git push origin second_branch ги додадов сите гранки на Github.
+15. Со git checkout second_branch се вратив на second_branch.
+16. Со nano shopping_list.txt се вратив во дадотеката,го променив името на 2та ставка,па направив add и commit.
+17. Anevski@Stefan MINGW64 ~/Desktop/SI_2022_lab1_193144 (second_branch)
+$ git log
+commit afab9e11e882a72acac8a854755da7c86dec351c (HEAD -> second_branch)
+Author: stefan-anevski <anevskistefan5@gmail.com>
+Date:   Fri Apr 8 16:34:48 2022 +0200
+
+    Modified second item!
+
+commit 7b26b49aba6d35154f1d0fcb5d2d884a1729b63a (origin/second_branch, main)
+Author: stefan-anevski <anevskistefan5@gmail.com>
+Date:   Fri Apr 8 16:22:53 2022 +0200
+
+    Added quantities to the items!
+
+commit c565192b7d23e6728cb3d36ec7c749dc69f773b4
+Author: stefan-anevski <anevskistefan5@gmail.com>
+Date:   Fri Apr 8 16:21:31 2022 +0200
+
+    Added 5 items to the shopping list!
+
+commit cddafcdd35e461927d0a1c3d76c7f23c3250dd6c (origin/main, origin/HEAD)
+Author: stefan-anevski <100270379+stefan-anevski@users.noreply.github.com>
+Date:   Fri Apr 8 16:14:58 2022 +0200
+
+    Initial commit
+18. Со nano shopping_list.txt се вратив во датотеката, ги променив 1-та и 3-та, па направив add , 
+па потоа за да ги спојам ја искористив командата git commit --amend -m "Modify item #1 and item #6"
+19. Anevski@Stefan MINGW64 ~/Desktop/SI_2022_lab1_193144 (second_branch)
+$ git log
+commit 99cfc019506bbd252507556a531b7781cd7e295b (HEAD -> second_branch)
+Author: stefan-anevski <anevskistefan5@gmail.com>
+Date:   Fri Apr 8 16:34:48 2022 +0200
+
+    Modified the first and the third item!
+
+commit 7b26b49aba6d35154f1d0fcb5d2d884a1729b63a (origin/second_branch, main)
+Author: stefan-anevski <anevskistefan5@gmail.com>
+Date:   Fri Apr 8 16:22:53 2022 +0200
+
+    Added quantities to the items!
+
+commit c565192b7d23e6728cb3d36ec7c749dc69f773b4
+Author: stefan-anevski <anevskistefan5@gmail.com>
+Date:   Fri Apr 8 16:21:31 2022 +0200
+
+    Added 5 items to the shopping list!
+
+commit cddafcdd35e461927d0a1c3d76c7f23c3250dd6c (origin/main, origin/HEAD)
+Author: stefan-anevski <100270379+stefan-anevski@users.noreply.github.com>
+Date:   Fri Apr 8 16:14:58 2022 +0200
+
+    Initial commit
+20. Ги искористив командите git checkout master и git merge first_branch
+21. Се случи конфликт, и се среди со промена во едиторот па потоа git add, и git commit -m "Merge branch 'second_branch'.
+22. Со git add 193144.txt ја додадов датотеката и git commit.
+23. Синхронизација со git push origin master.
